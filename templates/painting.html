@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rang E Pakistan | Art Crafting E-commerce Website</title>
+    <link rel="stylesheet" href="../static/painting.css">
+    <link rel="icon" href="../static/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="header">
+            <a href="#home"><img src="../static/logo-.png" class="logo"></a>
+            <ul class="navbar">
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('painting')}}">Painting</a>
+                        <a href="{{url_for('calligraphy')}}">Calligraphy</a>
+                        <a href="{{url_for('sketches')}}">Sketches</a>
+                        <a href="{{url_for('textiles')}}">Textiles</a>
+                    </div>
+                </li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+            <div class="top-btn">
+                <a href="{{url_for('login')}}" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Services Start -->
+
+    <Section class="painting">
+        <div class="painting-content">
+            <h1>Services</h1>
+            <h3>Painting</h3>
+        </div>
+    </Section>
+
+    <!-- latest start -->
+    <section class="latest">
+        <div class="product-intro">
+            <h1><u>New Arrivals</u></h1>
+            <hr>
+            <p>"Celebrating the vision and artistry of Pakistan's finest creators."</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p1.jpg" alt="" width="">
+                </div>
+                <h1>Mosque Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product1')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p2.jpg" alt="" width="">
+                </div>
+                <h1>Vibrant Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product2')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p6.jpg" alt="" width="">
+                </div>
+                <h1>Sunset Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product3')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p4.jpg" alt="" width="">
+                </div>
+                <h1>Mythos Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product4')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p5.jpg" alt="" width="">
+                </div>
+                <h1>Luminari Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product5')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p12.jpg" alt="" width="">
+                </div>
+                <h1>Dreamscape Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product6')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p7.jpg" alt="" width="">
+                </div>
+                <h1>Aethere Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product7')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p8.jpg" alt="" width="">
+                </div>
+                <h1>Rickshaw Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product8')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p9.jpg" alt="" width="">
+                </div>
+                <h1>Euphoria Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product9')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p10.jpg" alt="" width="">
+                </div>
+                <h1>Kairos Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product10')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p11.jpg" alt="" width="">
+                </div>
+                <h1>Horse Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product11')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p3.jpg" alt="" width="">
+                </div>
+                <h1>Moonlit Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product12')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p13.jpg" alt="" width="">
+                </div>
+                <h1>Nebula Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product13')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p14.jpg" alt="" width="">
+                </div>
+                <h1>Auric Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product14')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p15.jpg" alt="" width="">
+                </div>
+                <h1>Echoes Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product15')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="../static/p16.jpg" alt="" width="">
+                </div>
+                <h1>Luminari Painting</h1>
+                <div class="prod-Details">
+                    <p class="price">Rs.90/-</p>
+                    <a href="{{url_for('product16')}}" class="addToCart">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =========== Footer section Start ============ -->
+
+
+    <footer>
+        <div class="">
+          <h1>Rang E <span>Pakistan</span></h1>
+          <p>"Where Art Meets Shopping"</p>
+        </div>
+        <div class="">
+            <a href="#"></a><i class="fa-brands fa-instagram"></i>
+            <a href="#"></a><i class="fa-brands fa-twitter"></i>
+            <a href="#"></a><i class="fa-brands fa-facebook"></i>
+            <a href="#" id=""></a><i class="fa-brands fa-whatsapp"></i>
+            <p>Design by Crafty Coders</p>
+        </div>
+        <div class="">
+            <p>@2025 copyright All Rights reserved</p>
+        </div>
+    </footer> 
+
+
+
+    <!-- =========== Footer section End ============ -->
+
+
+</body>
+</html>

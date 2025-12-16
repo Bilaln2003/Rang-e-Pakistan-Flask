@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rang E Pakistan | Art Crafting E-commerce Website</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" href="../static/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- =========== Header section Start ============= -->
+    
+    
+    <header>
+        <nav class="header">
+            <a href="#home"><img src="../static/logo-.png" class="logo"></a>
+            <ul class="navbar">
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
+                <li class="dropdown"><a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('painting')}}">Painting</a>
+                        <a href="{{url_for('calligraphy')}}">Calligraphy</a>
+                        <a href="{{url_for('sketches')}}">Sketches</a>
+                        <a href="{{url_for('textiles')}}">Textiles</a>
+                    </div>
+                </li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+            <div class="top-btn">
+                <a href="{{url_for('login')}}" class="nav-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- =========== Header section End ============= -->
+
+    
+    <!-- Home Section Code -->
+
+
+    <section>
+        <div class="home-img">
+            <div class="text-box">
+                <h3>WELCOME TO</h3>
+                <h1>Rang E Pakistan</h1>
+                <hr>
+                <p>
+                    "Rang-e-Pakistan" is an innovative e-commerce platform dedicated to <br>promoting and showcasing the vibrant artistic heritage of Pakistan. Our<br> mission is to provide a global stage for Pakistani artists to display their <br>talents, connect with art enthusiasts, and monetize their creations.
+                </p>
+                <a href="{{url_for('painting')}}" class="home-btn">Explore now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Top Artist Section -->
+    <section class="latest">
+        <div class="product-intro">
+            <h1><u>Our Collection</u></h1>
+            <hr>
+            <p>"Celebrating the vision and artistry of Pakistan's finest creators."</p>
+        </div>
+
+        <!-- lady picture -->
+
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="../static/lady.webp" alt="">
+                    <div class="details">
+                        <h2><span>PAINTING</span></h2>
+                        <div class="more">
+                            <a href="{{url_for('painting')}}" class="read-more">See <span>More</span></a>
+                            <div class="icon-links">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                                <a href="#"><i class="fas fa-paperclip"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="../static/drawings.jpg" alt="">
+                    <div class="details">
+                        <h2><span>SKETCHES</span></h2>
+                        <div class="more">
+                            <a href="{{url_for('sketches')}}" class="read-more">See <span>More</span></a>
+                            <div class="icon-links">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                                <a href="#"><i class="fas fa-paperclip"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="../static/t3.jpg" alt="">
+                    <div class="details">
+                        <h2><span>TEXTILES</span></h2>
+                        <div class="more">
+                            <a href="{{url_for('textiles')}}" class="read-more">See <span>More</span></a>
+                            <div class="icon-links">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                                <a href="#"><i class="fas fa-paperclip"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="../static/Arabic.webp" alt="">
+                    <div class="details">
+                        <h2><span>CALLIGRAPHY</span></h2>
+                        <div class="more">
+                            <a href="{{url_for('calligraphy')}}" class="read-more">See <span>More</span></a>
+                            <div class="icon-links">
+                                <a href="#"><i class="fas fa-heart"></i></a>
+                                <a href="#"><i class="fas fa-eye"></i></a>
+                                <a href="#"><i class="fas fa-paperclip"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="latestv">
+        <div class="product-intro">
+            <h1><u>Newly Added Products</u></h1>
+            <hr>
+            <p>"Have a look at our latest Products"</p>
+        </div>
+        <br>
+        
+        
+        <div class="section-newproduct">
+            <div class="product-box">
+                <span class="p-discount">-20%</span>
+                <div class="p-img-container">
+                    <div class="p-img">
+                        <a href="#">
+                            <img src="../static/images (1).jpg" class="p-img-front" alt="">
+                        </a>
+                    </div>
+                </div>
+            <div class="p-box-text">
+                <!-- category -->
+                 <div class="product-category">
+                    <span>Loin Painting</span>
+                 </div>
+                 <!-- Title -->
+                  <a href="#" class="prodict-title">
+                    Beautiful loin painting
+                  </a>
+                  <!-- price -->
+                   <div class="price-buy">
+                    <span class="p-price">Rs.2000/-</span>
+                    <a href="#" class="p-buy-btn">Buy Now</a>
+                   </div>
+
+            </div>
+        </div>
+
+
+        <div class="product-box">
+            <span class="p-discount">-20%</span>
+            <div class="p-img-container">
+                <div class="p-img">
+                    <a href="#">
+                        <img src="../static/images (2).jpg" class="p-img-front" alt="">
+                    </a>
+    
+                </div>
+            </div>
+            <div class="p-box-text">
+                <!-- category -->
+                 <div class="product-category">
+                    <span>Loin Painting</span>
+                 </div>
+                 <!-- Title -->
+                  <a href="#" class="prodict-title">
+                    Beautiful loin painting
+                  </a>
+                  <!-- price -->
+                   <div class="price-buy">
+                    <span class="p-price">Rs.2000/-</span>
+                    <a href="#" class="p-buy-btn">Buy Now</a>
+                   </div>
+
+            </div>
+        </div>
+
+        <div class="product-box">
+            <span class="p-discount">-20%</span>
+            <div class="p-img-container">
+                <div class="p-img">
+                    <a href="#">
+                        <img src="../static/images (3).jpg" class="p-img-front" alt="">
+                    </a>
+    
+                </div>
+            </div>
+            <div class="p-box-text">
+                <!-- category -->
+                 <div class="product-category">
+                    <span>Loin Painting</span>
+                 </div>
+                 <!-- Title -->
+                  <a href="#" class="prodict-title">
+                    Beautiful loin painting
+                  </a>
+                  <!-- price -->
+                   <div class="price-buy">
+                    <span class="p-price">Rs.2000/-</span>
+                    <a href="#" class="p-buy-btn">Buy Now</a>
+                   </div>
+
+            </div>
+        </div>
+
+        <div class="product-box">
+            <span class="p-discount">-20%</span>
+            <div class="p-img-container">
+                <div class="p-img">
+                    <a href="#">
+                        <img src="../static/images.jpg" class="p-img-front" alt="">
+                    </a>
+    
+                </div>
+            </div>
+            <div class="p-box-text">
+                <!-- category -->
+                 <div class="product-category">
+                    <span>Loin Painting</span>
+                 </div>
+                 <!-- Title -->
+                  <a href="#" class="prodict-title">
+                    Beautiful loin painting
+                  </a>
+                  <!-- price -->
+                   <div class="price-buy">
+                    <span class="p-price">Rs.2000/-</span>
+                    <a href="#" class="p-buy-btn">Buy Now</a>
+                   </div>
+
+            </div>
+        </div>
+
+        <div class="product-box">
+            <span class="p-discount">-20%</span>
+            <div class="p-img-container">
+                <div class="p-img">
+                    <a href="#">
+                        <img src="../static/52Figure40__50289-min-2__81530.jpg" class="p-img-front" alt="">
+                    </a>
+    
+                </div>
+            </div>
+            <div class="p-box-text">
+                <!-- category -->
+                 <div class="product-category">
+                    <span>Loin Painting</span>
+                 </div>
+                 <!-- Title -->
+                  <a href="#" class="prodict-title">
+                    Beautiful loin painting
+                  </a>
+                  <!-- price -->
+                   <div class="price-buy">
+                    <span class="p-price">Rs.2000/-</span>
+                    <a href="#" class="p-buy-btn">Buy Now</a>
+                   </div>
+
+            </div>
+        </div>
+</section>
+
+   <!-- ========== WORK COUNTER SECTION================= -->
+
+   <section class="section-work-data">
+    <div class="counter-grid">
+        <div>
+            <h2 class="counter-number">30+</h2>
+            <p>SESSIONS</p>
+        </div>
+
+        <div>
+            <h2 class="counter-number">45+</h2>
+            <p>EXHIBITIONS</p>
+        </div>
+
+        <div>
+            <h2 class="counter-number">28+</h2>
+            <p>ARTISIS</p>
+        </div>
+
+        <div>
+            <h2 class="counter-number">5986+</h2>
+            <p>VISITORS</p>
+        </div>
+    </div>
+   </section>
+
+   <!-- =========== About section ============ -->
+    <section class="class">
+        <div class="section">
+            <div class="about">
+                <div class="content-section">
+                    <div class="title">
+                        <h1>OUR VISION</h1>
+                        <hr style="border: 2px solid #000000; width: 10%; margin: 10px auto;">
+                    </div>
+                    <div class="content">
+                        <p>Rang E Pakistan.com is your one-stop shop for diverse and captivating art. Discover a curated collection of original paintings, sculptures, drawings, and traditional artworks like serigraphs and mixed media pieces. Whether you're searching for "buy paintings online" or "art store near me," we offer a convenient and inspiring platform to find the perfect piece for your home or collection.</p>
+                        <br>
+                        <h3>Explore a rich tapestry of styles:</h3>
+                        <p>From vibrant contemporary paintings to intricate traditional art forms, we showcase a diverse range of artistic expressions. Dive into the world of tribal art, folk art, and mixed media creations, each offering a unique perspective and cultural richness.
+                        </p>
+                        <br>
+                        <h3>Bring your vision to life:</h3>
+                        <p>Do you have a specific artwork in mind? We offer a personalized commissioning service, allowing you to collaborate with talented artists and create a piece that perfectly reflects your taste and vision.</p>
+                        <br>
+                        <h3>Start your art journey today:</h3>
+                        <p>Browse our extensive online gallery or visit us in person to experience the beauty of art firsthand. We're passionate about connecting you with the perfect piece to elevate your space and inspire your soul.</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+    </section>
+
+    <!-- =========== Footer section Start ============= -->
+
+
+    <footer>
+        <div class="">
+          <h1>Rang E <span>Pakistan</span></h1>
+          <p>"Where Art Meets Shopping"</p>
+        </div>
+        <div class="">
+            <a href="#"></a><i class="fa-brands fa-instagram"></i>
+            <a href="#"></a><i class="fa-brands fa-twitter"></i>
+            <a href="#"></a><i class="fa-brands fa-facebook"></i>
+            <a href="#" id=""></a><i class="fa-brands fa-whatsapp"></i>
+            <p>Design by Crafty Coders</p>
+        </div>
+        <div class="">
+            <p>@2025 copyright All Rights reserved</p>
+        </div>
+    </footer> 
+
+
+    <!-- =========== Footer section End ============= -->
+
+
+
+
+</body>
+</html>
